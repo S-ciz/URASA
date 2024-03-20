@@ -9,32 +9,26 @@
     <link rel="stylesheet" href="styles/welcome.css">
     <link rel="stylesheet" href="styles/features.css">
     <link rel="stylesheet" href="styles/team.css">
+    <!--Animation on scroll-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+  <!--Slick-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 <body>
 
-  <!--Modal-->
-  <section class="Modal">
-    <div class="modal_box">
-         <header>
-            <span> <img src="./img/urasa.png" alt=""> </span><span onclick="closeModal()" class="close">X</span>
-         </header>
-          <main class="content">
-            <!--Content goes here-->
-          </main>
-    </div>
-  </section>
+
 
 <!--Showcase -->
 <main class="Showcase"> 
 <section class="Showcase_content">
    <h1 data-aos-duration="2000" data-aos="fade-right">URASA</h1>
    <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> <span class="active">Addressing</span> Trauma, <br> Fostering Mental <span class="active">Health</span> </h3>
-   <div data-aos="zoom-out-down" class="Showcase_btns"> <button class="feature">Explore Features </button>  <button class="chat">Let Chat!</button>  </div>
+   
 </section>
 <section></section>
 </main>
+
 
 <!-- Welcome -->
 <main class="Welcome"> 
@@ -51,6 +45,14 @@
 
 <!--Key features-->
 
+  
+
+  <div class="carousel">
+    <div class="ca_third" ><h2>Harvesting Growth</h2></div>
+    <div class="ca_sec" ><h2>Bringing Courage</h2></div>
+    <div class="ca_first" ><h2>Striving for greatness</h2> </div>
+  </div>
+
 <section class="features">
    
     <div class="wrapper"> 
@@ -60,7 +62,7 @@
         <div data-aos="flip-left" class="card"> 
             <img loading="lazy" src="./img/Education.jpg" alt="health">
             <h3 class="title">Education</h3>
-            <p>Documentation and access to higher learning institutions including financial assistance required to acquire a degree</p>
+            <p>Document access to higher learning </p>
             <button>Read more </button>
         </div>
         <div data-aos="zoom-in" class="card"> 
@@ -145,7 +147,18 @@
     Modal.style.display = 'none'
   }
 </script>
-<script src="/javascript/RandomUsers.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $('.carousel').slick(
+        {  
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+        }
+    );
+    console.log("click is on...")
+</script>
 <script src="/javascript/App.js"></script>
 
 </body>
