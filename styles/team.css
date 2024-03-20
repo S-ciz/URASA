@@ -75,8 +75,11 @@ main.Team .TeamWrapper .items .item .media img {
 
 @media (max-width: 600px) {
 
-  main.Team .TeamWrapper .items .item 
+  main.Team .TeamWrapper .items 
   {
-    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
+ 
+
 }
