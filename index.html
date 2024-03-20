@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URASA | Home</title>
+    <link rel="shortcut icon" href="./img/urasa.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/showcase.css">
+    <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+  <!--Modal-->
+  <section class="Modal">
+    <div class="modal_box">
+         <header>
+            <span> <img src="./img/urasa.png" alt=""> </span><span onclick="closeModal()" class="close">X</span>
+         </header>
+          <main class="content">
+            <!--Content goes here-->
+          </main>
+    </div>
+  </section>
+
+<!--Showcase -->
+<main class="Showcase"> 
+<section class="Showcase_content">
+   <h1 data-aos-duration="2000" data-aos="fade-right">URASA</h1>
+   <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> <span class="active">Addressing</span> Trauma, <br> Fostering Mental <span class="active">Health</span> </h3>
+   <div data-aos="zoom-out-down" class="Showcase_btns"> <button class="feature">Explore Features </button>  <button class="chat">Let Chat!</button>  </div>
+</section>
+<section></section>
+</main>
+
+<!-- Welcome -->
+<main class="Welcome"> 
+    <section class="sectionA" data-aos="fade-right">
+      <img loading="lazy" src="/img/yoga.jpg" alt="yoga">
+    </section>
+
+    <section data-aos="fade-left" class="sectionB">
+        <h1>Welcome!</h1>
+        <p>We are a young organization which started back in 2007 as a Development, Research- Advocacy Project (DevRAP), with the purpose of assisting forced migrants with access to higher learning education and training institutions (application, registration, bursaries processes), access to health care services (advocacy, interpretation services) and psychosocial services (seminars and trainings, health education programs, referrals to relevant service provisions) to navigate the complexities facing them in their host country.  </p>
+         <button> Read more </button>
+    </section>
+</main>
+
+<!--Key features-->
+
+<section class="features">
+   
+    <div class="wrapper"> 
+    <h1 class="title">Key Focus Areas</h1>
+    <p class="subtitle">We focus on all identified aspects that have the potential to cause psychological trauma or trigger any previously existing mental health condition among forcibly displaced persons.</p>
+    <main class="cards"> 
+        <div data-aos="flip-left" class="card"> 
+            <img loading="lazy" src="/img/Education.jpg" alt="health">
+            <h3 class="title">Education</h3>
+            <p>Documentation and access to higher learning institutions including financial assistance required to acquire a degree</p>
+            <button>Read more </button>
+        </div>
+        <div data-aos="zoom-in" class="card"> 
+            <img loading="lazy" src="/img/doctor.jpg" alt="health">
+            <h3 class="title">Healthcare</h3>
+            <p>Facilitate access to healthcare services</p>
+            <button>Read more </button>
+        </div>
+        <div  data-aos="flip-left" class="card"> 
+            <img loading="lazy" src="/img/job.jpg" alt="health">
+            <h3 class="title">Job Filtering</h3>
+            <p>text will go here fam</p>
+            <button>Read more </button>
+        </div>
+    </main>
+</div>
+
+</section>
+
+<!--Meet out Team-->
+<main class="Team">
+   <main class="TeamWrapper"> 
+     
+    <h1>Our <span style="color:var(--blue)">Team</span></h1>
+    <div class="items">
+        <div class="item">
+            <img class="profile" src="./img/girl1.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+        <div class="item">
+            <img class="profile" src="./img/man2.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+        <div class="item">
+            <img class="profile" src="./img/man1.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+        <div class="item">
+            <img class="profile" src="./img/girl2.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+    </div>
+       
+     </main>
+</main>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  const closeModal = (e)=>{
+   
+    const Modal = document.querySelector('section.Modal');
+    Modal.style.display = 'none'
+  }
+</script>
+<script src="/javascript/RandomUsers.js"></script>
+<script src="/javascript/App.js"></script>
+
+</body>
+</html>
