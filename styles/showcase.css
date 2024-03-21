@@ -87,7 +87,7 @@ section.Showcase_content {
 section.Showcase_content h1 {
   font-size: 70px;
   font-weight: bold;
-  color: var(--primary-color);
+  color: #f7f7f7;
 }
 
 section.Showcase_content h3 {
