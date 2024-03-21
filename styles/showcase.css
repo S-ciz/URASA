@@ -125,8 +125,11 @@ button {
   main.Showcase {
     position: relative;
     display: grid;
+    place-items:center;
+    place-content:center;
+    text-align:center;
     grid-template-columns: 1fr; 
-    height: 400px;
+    height: 100vh;
   }
   .carousel 
   {
