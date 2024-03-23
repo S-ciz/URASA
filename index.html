@@ -3,55 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URASA | Home</title>
+    <title>URASA</title>
     <link rel="shortcut icon" href="./img/urasa.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/showcase.css">
-    <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/Hero.css">
+    <link rel="stylesheet" href="styles/AboutUs.css">
+    <link rel="stylesheet" href="styles/MissionVision.css">
     <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/activities.css">
     <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+     
     <!--Animation on scroll-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!--Slick-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+ 
 </head>
 <body>
 
+<!--Navbar-->
+<header> 
+<nav>
+<div>
+ <span> <img src="./img/urasa.png" alt=""></span>
+ <span> <h3>URASA</h3> </span>
+</div>
 
+<ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#activities">Activities</a></li>
+     <li><a class="contact" href="#contact">Contact</a> </li>
+</ul>
+<div class="extra_btn">
+    <li><a class="contact" href="#contact">Contact</a> </li></div>
+</nav>
+</header>
 
-<!--Showcase -->
-<main class="Showcase"> 
-<section class="Showcase_content">
-   <h1 data-aos-duration="2000" data-aos="fade-right">URASA</h1>
-   <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> <span class="active">Addressing</span> Trauma, <br> Fostering Mental <span class="active">Health</span> </h3>
-   
+<!--Hero Section-->
+
+<main class="Hero">
+
+    <div class="image_wrapper"> 
+        <img src="./img/kids.jpg" alt="">
+    </div>
+
+    <div class="content">
+      <section class="text">
+        <h1>Addressing Psychological <span class="active">Trauma</span> <br> For <span class="active">  Socially Excluded </span> Persons</h1>
+        <h3>The Urban Refugees & Asylum Seekers Assistant</h3>
+        <button> Learn More </button>
+      </section>
+    </div>
+</main>
+
+<!--About us-->
+
+<section  id="about" class="aboutUs">
+     
+    <h1 class="title">About us</h1>
+    <main>
+        <div class="content">
+            <h1 style="color: #49796B;">Background</h1>
+            <p>We are a young organization which started back in 2007 as a Development, Research- Advocacy Project <span class="active">(DevRAP)</span> , with the purpose of assisting forced migrants with access to higher learning education and training institutions (application, registration, bursaries processes), access to health care services (advocacy, interpretation services) and psychosocial services (seminars and trainings, health education programs, referrals to relevant service provisions) to navigate the complexities facing them in their host country. 
+
+                </p>
+                <p>
+                Following changes in the humanitarian spaces and systems in the host country, the Non-profit organizations’ registration processes, in 2021, we changed the name to <span class="active"> URBAN REFUGEES & ASYLUM SEEKERS ASSISTANCE (URASA). </span> The change was dictated by the type of services that we provided during COVID-19 and the high number of beneficiaries whose majority was people of forced displacement background. 
+                </p>
+        </div>
+
+        <div class="img"> 
+        <img  src="./img/africa.png" alt="">
+        </div>
+    </main>
 </section>
-<section></section>
-</main>
 
+<!--Mission and Vision-->
 
-<!-- Welcome -->
-<main class="Welcome"> 
-    <section class="sectionA" data-aos="fade-right">
-      <img loading="lazy" src="./img/yoga.jpg" alt="yoga">
-    </section>
+<section class="mission_vision">
+  
+    <main> 
+        <div class="mission"> 
+          <h1>Mission</h1>
+          <p>we exist to address the determinant of psychological trauma, to reduce the risks of mental health among socially excluded persons</p>
+        </div>
 
-    <section data-aos="fade-left" class="sectionB">
-        <h1>Welcome!</h1>
-        <p>We are a young organization which started back in 2007 as a Development, Research- Advocacy Project (DevRAP), with the purpose of assisting forced migrants with access to higher learning education and training institutions (application, registration, bursaries processes), access to health care services (advocacy, interpretation services) and psychosocial services (seminars and trainings, health education programs, referrals to relevant service provisions) to navigate the complexities facing them in their host country.  </p>
-         <button> Read more </button>
-    </section>
-</main>
+        <div class="vision"> 
+           <h1 class="active">Vision</h1>
+           <p>Ensure a forcibly displaced generation free from modifiable risks factors of mental health problems.</p>
+        </div>
+    </main>
+
+</section>
+
 
 <!--Key features-->
 
-  
-
-  <div class="carousel">
-    <div class="ca_third" ><h2>Harvesting Growth</h2></div>
-    <div class="ca_sec" ><h2>Bringing Courage</h2></div>
-    <div class="ca_first" ><h2>Striving for greatness</h2> </div>
-  </div>
 
 <section class="features">
    
@@ -60,19 +108,19 @@
     <p class="subtitle">We focus on all identified aspects that have the potential to cause psychological trauma or trigger any previously existing mental health condition among forcibly displaced persons.</p>
     <main class="cards"> 
         <div data-aos="flip-left" class="card"> 
-            <img loading="lazy" src="./img/Education.jpg" alt="health">
+            <img loading="lazy" src="./img/study.jpg" alt="health">
             <h3 class="title">Education</h3>
             <p> Higher learning </p>
             <button>Read more </button>
         </div>
         <div data-aos="zoom-in" class="card"> 
-            <img loading="lazy" src="./img/doctor.jpg" alt="health">
+            <img loading="lazy" src="./img/healthcare.jpg" alt="health">
             <h3 class="title">Healthcare</h3>
             <p>Facilitate access to healthcare services</p>
             <button>Read more </button>
         </div>
         <div  data-aos="flip-left" class="card"> 
-            <img loading="lazy" src="./img/job.jpg" alt="health">
+            <img loading="lazy" src="./img/work.jpg" alt="health">
             <h3 class="title">Job Filtering</h3>
             <p>text will go here fam</p>
             <button>Read more </button>
@@ -82,11 +130,32 @@
 
 </section>
 
+<!--Activities-->
+
+<main id="activities" class="Activities"> 
+
+    <h1 class="act_title">Activities</h1>
+    <div class="actitivies_wrapper">
+
+         <div style="background-color: var(--primary-color);">
+            <h3>Health and Wellbeing Programs</h3>
+         </div>
+
+         <div>
+            <h3 style="color:var(--primary-color)">Referral Pathways</h3>
+         </div>
+
+         <div style="background-color: var(--primary-color);"> 
+          <h3>  Collaboration and Partnerships</h3>
+         </div>
+    </div>
+</main>
+
 <!--Meet out Team-->
 <main class="Team">
    <main class="TeamWrapper"> 
      
-    <h1>Our <span style="color:var(--blue)">Team</span></h1>
+    <h1>Our <span style="color:#90EE90">Team</span></h1>
     <div class="items">
         <div class="item">
             <img class="profile" src="./img/girl1.jpg" />
@@ -132,33 +201,102 @@
                 <img src="./icons/email.jpg" alt="email">
             </div>
         </div>
+
+        <div class="item">
+            <img class="profile" src="./img/man1.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+        <div class="item">
+            <img class="profile" src="./img/man1.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+        <div class="item">
+            <img class="profile" src="./img/man1.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="profile" src="./img/man1.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+
+        <div class="item">
+            <img class="profile" src="./img/man1.jpg" />
+            <h3 class="title">Joseph Brown</h3>
+            <p class="text">Marketing head</p>
+
+            <div class="media"> 
+                <img src="./icons/fb.png" alt="fb"/>
+                <img src="./icons/inst.jpg" alt="insta"/>
+                <img src="./icons/email.jpg" alt="email">
+            </div>
+        </div>
+
     </div>
        
      </main>
 </main>
+ 
+<!--Contact-->
+
+<section id="contact" class="Contact">
+
+    <section class="contact_content">
+        <h1>Contact</h1>
+        <ul>
+            
+            <li> <img src="./icons/email.png" alt=""> <a> urasa.org@gmail.com</a>  </li>
+            <li> <img src="./icons/twitter.png" alt=""> <a>https://twitter.com/OrgUrasa</a>  </li>
+            <li> <img src="./icons/linke.png" alt=""> <a>https://www.linkedin.com/in/urasa-south-africa-782759295/</a>  </li>
+            <li> <img src="./icons/inst.jpg" alt=""> <a>https://www.instagram.com/urasaorg/</a>  </li>
+            
+        </ul>
+    </section>
+
+    <section class="contact_image">
+        <img src="./img/africa.png"/>
+    </section>
+</section>
+
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
-
   const closeModal = (e)=>{
    
     const Modal = document.querySelector('section.Modal');
     Modal.style.display = 'none'
   }
 </script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script>
-    $('.carousel').slick(
-        {  
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-        }
-    );
-    console.log("click is on...")
-</script>
+
 <script src="/javascript/App.js"></script>
 
 </body>

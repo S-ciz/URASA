@@ -1,0 +1,52 @@
+.mission_vision 
+{
+    width: 100%;
+    background-color: #f7f7f7;
+    margin-top: 1rem;
+}
+
+.mission_vision main 
+{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    column-gap: 1rem;
+    padding: 1rem 3rem;
+}
+
+.mission_vision main div 
+{
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+.mission_vision main div.mission 
+{
+    background-color: var(--primary-color);
+    color: #f7f7f7;
+}
+.mission_vision main div.vision 
+{
+    background-color: white;
+}
+
+
+@media (max-width:800px) {
+    
+    .mission_vision main  
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px)  
+{
+    .mission_vision main 
+    {
+        display: grid;
+        row-gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}
