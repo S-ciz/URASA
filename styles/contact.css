@@ -63,7 +63,7 @@
     display: grid;
     width: 100%;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 0;
   }
   .contact_content {
     width: 100%;

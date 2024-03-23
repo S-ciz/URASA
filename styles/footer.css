@@ -2,7 +2,7 @@ footer
 {
     background-color: var(--primary-color);
     text-align: center;
-    margin-top: 3rem;
+    margin-top:0;
     padding: 2rem;
     color: white;
 }
