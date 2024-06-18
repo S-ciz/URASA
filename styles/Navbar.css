@@ -46,14 +46,17 @@ header nav ul li a {
 }
 
 @media (max-width: 500px) {
-  header nav ul {
-    display: none;
+  header nav 
+  {
+    width: 90%;
   }
-  .extra_btn {
-    display: grid;
-    list-style: none;
+  .contact {
+    padding: 0.5rem;
+    font-size: .8rem;
   }
-  .extra_btn a {
-    text-decoration: none;
+  header nav div h3 
+  {
+    font-size: 0.9rem;
   }
+  
 }
