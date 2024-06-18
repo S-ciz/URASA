@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/activities.css">
     <link rel="stylesheet" href="styles/team.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/Modal.css">
     <link rel="stylesheet" href="styles/footer.css">
 
      
@@ -21,6 +22,7 @@
  
 </head>
 <body>
+
 
 <!--Navbar-->
 <header> 
@@ -31,9 +33,7 @@
 </div>
 
 <ul>
-    <li><a class="active" href="#">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#activities">Activities</a></li>
+    <li><a  href="#">+27 61 654 9234</a></li>
      <li><a class="contact" href="#contact">Contact</a> </li>
 </ul>
 <div class="extra_btn">
@@ -109,22 +109,22 @@
     <p class="subtitle">We focus on all identified aspects that have the potential to cause psychological trauma or trigger any previously existing mental health condition among forcibly displaced persons.</p>
     <main class="cards"> 
         <div data-aos="flip-left" class="card"> 
-            <img loading="lazy" src="./img/study.jpg" alt="health">
+            <img loading="lazy" src="./img/edu.jpeg" alt="health">
             <h3 class="title">Education</h3>
             <p> Higher learning </p>
-            <button>Read more </button>
+            <button myId="2" id="btn_feature" >Read more </button>
         </div>
         <div data-aos="zoom-in" class="card"> 
-            <img loading="lazy" src="./img/healthcare.jpg" alt="health">
+            <img loading="lazy" src="./img/health.jpeg" alt="health">
             <h3 class="title">Healthcare</h3>
-            <p>Facilitate access to healthcare services</p>
-            <button>Read more </button>
+            <p>Access to healthcare services</p>
+            <button myId="1"  id="btn_feature">Read more </button>
         </div>
         <div  data-aos="flip-left" class="card"> 
-            <img loading="lazy" src="./img/work.jpg" alt="health">
+            <img loading="lazy" src="./img/job.jpeg" alt="health">
             <h3 class="title">Job Filtering</h3>
-            <p>text will go here fam</p>
-            <button>Read more </button>
+            <p>Assisting with job hunt</p>
+            <button myId="0" id="btn_feature">Read more </button>
         </div>
     </main>
 </div>
@@ -170,7 +170,7 @@
             </div>
         </div>
         <div class="item">
-            <img class="profile" src="./img/img4.jpg" />
+            <img class="profile" src="./img/man3.jpeg" />
             <h3 class="title">GANZAMUNGU ZIHINDULA</h3>
             <p class="text">Associate Professor</p>
 
@@ -181,7 +181,7 @@
             </div>
         </div>
         <div class="item">
-            <img class="profile" src="./img/img2.jpg" />
+            <img class="profile" src="./img/lady1.jpeg" />
             <h3 class="title">PATRICIEN MWEZE</h3>
             <p class="text">Human Resource</p>
 
@@ -233,6 +233,20 @@
     </section>
 </section>
 
+
+    <!-- Modal  -->
+
+    <aside class="Modal"> 
+ 
+        <main>
+          <header> 
+              <div> <img src="./img/urasa.png"/></div>
+               <div class="cancel"> X </div>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ab quam dicta iste veritatis vel recusandae nemo facilis rem quaerat.</p>
+        </main>
+      </aside>
+
 <!--Footer-->
 
 <footer>
@@ -240,17 +254,13 @@
 </footer>
 
 
+
+<script src="./javascript/App.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
-  const closeModal = (e)=>{
-   
-    const Modal = document.querySelector('section.Modal');
-    Modal.style.display = 'none'
-  }
 </script>
 
-<script src="/javascript/App.js"></script>
 
 </body>
 </html>
