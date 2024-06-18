@@ -30,6 +30,7 @@ main.Team .TeamWrapper .items .item {
   display: grid;
   width: 200px;
   padding: 1rem;
+  cursor: pointer;
   /* background-color: var(--light_blue); */
   background-color: #00AB66;
 }

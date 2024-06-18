@@ -36,7 +36,6 @@ section.features .cards {
 }
 section.features .cards .card {
   width: 300px;
-  cursor: pointer;
   background-color: white;
 }
 
