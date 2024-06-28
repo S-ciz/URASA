@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const featurebtns = document.querySelectorAll("#btn_feature");
-  // featurebtns.forEach((btn) => {
-  //  // btn.addEventListener("click", toggleFeature);
-  // });
+  featurebtns.forEach((btn) => {
+     btn.addEventListener("click", toggleFeature);
+  });
   const ModalMain = Modal.querySelector("main");
 
   Modal.addEventListener("click", (e) => {
@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const Teams = document.querySelectorAll('.item');
-  Teams.forEach(team=>{
-    team.addEventListener('click', ()=>{
-      Modal.style.display = 'grid'
-    })
-  })
+  // const Teams = document.querySelectorAll('.item');
+  // Teams.forEach(team=>{
+  //   team.addEventListener('click', ()=>{
+  //     Modal.style.display = 'grid'
+  //   })
+  // })
 });
