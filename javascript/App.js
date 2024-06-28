@@ -28,15 +28,15 @@ function toggleFeature(e) {
     Modal.style.display = "grid";
     const modalText = Modal.querySelector("p");
     modalText.textContent = Features[parseInt(id)].text;
-    body.style.overflow = 'hidden'
+    body.style.overflow = 'hidden';
+
   }
 
-  const title = e.target.previousElementSibling.previousElementSibling;
-  console.log();
+
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   const Modal = document.querySelector("aside.Modal");
-
   const removeModal = Modal.querySelector(".cancel");
 
   removeModal.addEventListener("click", () => {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const featurebtns = document.querySelectorAll("#btn_feature");
 
   featurebtns.forEach((btn) => {
-    btn.addEventListener("click", toggleFeature);
+   // btn.addEventListener("click", toggleFeature);
   });
 
   const ModalMain = Modal.querySelector("main");
