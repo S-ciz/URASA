@@ -57,10 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // const Teams = document.querySelectorAll('.item');
-  // Teams.forEach(team=>{
-  //   team.addEventListener('click', ()=>{
-  //     Modal.style.display = 'grid'
-  //   })
-  // })
+
 });
