@@ -45,11 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const featurebtns = document.querySelectorAll("#btn_feature");
-
-  featurebtns.forEach((btn) => {
-   // btn.addEventListener("click", toggleFeature);
-  });
-
+  // featurebtns.forEach((btn) => {
+  //  // btn.addEventListener("click", toggleFeature);
+  // });
   const ModalMain = Modal.querySelector("main");
 
   Modal.addEventListener("click", (e) => {
