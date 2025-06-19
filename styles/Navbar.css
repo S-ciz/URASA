@@ -8,7 +8,7 @@ header nav {
   width: 80%;
   margin: auto;
   align-items: center;
-  padding: 1rem 0;
+  padding: .5rem 0;
 }
 header nav div {
   display: flex;
@@ -26,6 +26,7 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
+  font-size: 12px;
 }
 header nav ul li a {
   text-decoration: none;

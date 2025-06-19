@@ -41,7 +41,11 @@ main.Hero
 { 
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
+  background-image: url('../img/kids.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image_wrapper 

@@ -13,6 +13,8 @@ section.features .wrapper {
   width: 80%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  display: grid;
+  justify-items: center;
 }
 section.features h1.title {
   font-size: 40px;
@@ -37,6 +39,14 @@ section.features .cards {
 section.features .cards .card {
   width: 300px;
   background-color: white;
+  transition: all 1s ease-in-out;
+}
+
+section.features .cards .card:hover{
+
+  transform: scale(0.9);
+  cursor: pointer;
+
 }
 
 section.features .cards .card img {
@@ -59,7 +69,7 @@ section.features .cards .card p {
 section.features .cards .card button {
   width: 100%;
   margin-top: 0.5rem;
-  border: 1px solid #ccc;
+  border: none;
   background-color: white;
   color: var(--primary-color);
   padding: 1rem;
@@ -73,7 +83,7 @@ section.features .cards .card button:hover {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   section.features h1.title 
   {
     font-size: 30px;
@@ -84,7 +94,8 @@ section.features .cards .card button:hover {
     margin-bottom: 0;
   }
   section.features .cards
-  {
+  { 
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;

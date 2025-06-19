@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URASA</title>
+    <link rel="shortcut icon" href="./img/urasa.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/Hero.css">
+    <link rel="stylesheet" href="styles/signIn.css">
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <header>
+        <nav>
+            <div>
+                <span> <img loading="lazy" src="./img/urasa.png" alt=""></span>
+                <span>
+                    <h3>URASA</h3>
+                </span>
+            </div>
+
+            <ul>
+                <li><a href="#"> <!--Contact--> </a></li>
+               
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="./blogs.html">Blogs</a> </li>
+                <li><a style="color: var(--primary-color); font-weight: bold;" href="./signIn.html"> Admin</a></li>
+                <li id="contact_btn"><a class="contact" href="./index.html#contact">Contact</a> </li>
+
+            </ul>
+            <div class="extra_btn">
+                <li><a class="contact" href="#contact">Contact</a> </li>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--admin form Section-->
+
+   <form class="admin_form" id="admin_form">
+         <img src="./img/urasa.png"/>
+         <h2 class="title">Admin</h2>
+
+         <label>Email</label>
+         <input required type="text">
+         <label>Password</label>
+         <input required type="password">
+    <button>Sign in</button>
+   </form>
+
+
+    
+    <!--Footer-->
+
+    <script>
+
+        const form = document.querySelector('form#admin_form');
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+           
+          window.location.pathname="/admin.html"
+            
+        })
+    </script>
+   
+
+
+
+
+</body>
+
+</html>

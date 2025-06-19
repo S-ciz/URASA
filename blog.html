@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URASA</title>
+    <link rel="shortcut icon" href="./img/urasa.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/Navbar.css">
+    <link rel="stylesheet" href="styles/Hero.css">
+    <link rel="stylesheet" href="styles/blogs.css">
+ 
+ 
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <header>
+        <nav>
+            <div>
+                <span> <img loading="lazy" src="./img/urasa.png" alt=""></span>
+                <span>
+                    <h3>URASA</h3>
+                </span>
+            </div>
+
+            <ul>
+                <li><a href="#"> <!--Contact--> </a></li>
+               
+                <li><a href="./index.html">Home</a> </li>
+                <li><a class="active" href="./blogs.html">Blogs</a> </li>
+                <li><a  href="./signIn.html"> Admin</a></li>
+                <li id="contact_btn"><a class="contact" href="./index.html#contact">Contact</a> </li>
+
+            </ul>
+            <div class="extra_btn">
+                <li><a class="contact" href="#contact">Contact</a> </li>
+            </div>
+
+        </nav>
+    </header>
+
+   
+
+
+
+    <!--Blog-->
+
+    <div class="blog_wrapper">
+       
+    </div>
+   
+
+   
+
+
+<script>
+
+const blogs_container = document.querySelector('.blog_wrapper');
+
+ let baseUrl = "http://localhost:5000/editor"
+
+ let local_id= localStorage.getItem('blog');
+
+ fetch(baseUrl)
+ .then(res=> res.json())
+ .then(data=>{
+
+    let item = data.find(b=> b._id === local_id)
+    blogs_container.innerHTML = `  <div class="blog">
+            <img src="${item.image}"/>
+            <h1 class="title active">${item.title}</h1>
+            <p class="content">${item.content}</p>
+            <a href="./blogs.html" class="btn">Return to blogs</a>
+        </div>`
+ })
+
+
+</script>
+
+</body>
+
+</html>

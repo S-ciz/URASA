@@ -1,0 +1,156 @@
+
+/* Blogs */
+
+.blogs_container
+{
+    width: 800px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blogs_container .blogs 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blogs_container .blogs div a
+{
+    visibility: hidden;
+}
+
+.blogs_container .blogs div 
+{   
+    transition: all .5s ease-in-out;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    align-content: end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.8);
+    
+}
+.blogs_container .blogs div:hover 
+{
+    cursor: pointer;
+    transform: scale(0.95);
+    
+}
+.blogs_container .blogs div:hover > a
+{
+    visibility: visible;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    align-items: end;
+    font-weight: bold;
+}
+.blogs_container .blogs div:nth-child(1)
+{  
+    grid-row-start: 1;
+    grid-row: 1/3;
+}
+.blogs_container .blogs div:nth-child(6)
+{
+    grid-column: 1/3;
+}
+.blogs_container .blogs div:nth-child(7)
+{
+    grid-row-start: 3;
+    grid-column-start:3 ;
+    grid-row: 3/5;
+}
+
+
+
+
+@media (max-width:800px) {
+    .blogs_container
+    {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+/* one Blog */
+.blog_wrapper 
+{
+   width: 800px;
+   margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.blog_wrapper .blog 
+{
+    background-color: white;
+    margin-top: 2rem;
+    padding: 1rem;
+
+}
+.blog_wrapper .blog  img 
+{  
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+   
+}
+.blog_wrapper .blog .title 
+{
+    text-align: center;
+    padding: 1rem;
+}
+
+.blog_wrapper .blog .content 
+{
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.5;
+
+}
+
+.blog_wrapper .blog .btn 
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: .5rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+   
+    font-weight: bold;
+    color: white;
+    font-size: bold;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+@media (max-width:800px) {
+    
+    .blog_wrapper
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+    .blog_wrapper .blog 
+    {
+        margin-top: 0;
+    }
+}

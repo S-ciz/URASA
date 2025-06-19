@@ -1,3 +1,4 @@
+
 footer 
 {
     background-color: var(--primary-color);
@@ -5,4 +6,6 @@ footer
     margin-top:0;
     padding: 2rem;
     color: white;
+  
+   
 }
