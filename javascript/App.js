@@ -1,9 +1,3 @@
-document.querySelector('body').style.display = 'none'
-
-window.addEventListener('load', ()=>{
-  document.querySelector('body').style.display = 'grid'
-})
-
 
 
 //Features
