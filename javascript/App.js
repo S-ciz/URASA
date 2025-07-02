@@ -1,4 +1,8 @@
-  // Import the functions you need from the SDKs you need
+document.querySelector('body').style.display = 'none'
+
+window.addEventListener('load', ()=>{
+  document.querySelector('body').style.display = 'grid'
+})
 
 
 
