@@ -38,8 +38,7 @@
             <ul>
                 <li><a href="#"> <!--Contact--> </a></li>
                 <li><a style="color: var(--primary-color); font-weight: bold;" href="./index.html"> Home</a></li>
-                <li><a href="./blogs.html">Blogs</a> </li>
-                <li><a href="./signIn.html">Admin</a> </li>
+                <li><a style=" color: #333;" href="#services"> Features</a></li>
                 <li id="contact_btn"><a class="contact" href="#">Contact</a> </li>
 
             </ul>
@@ -64,7 +63,7 @@
                         class="active">Trauma</span> <br> For <span class="active"> Socially Excluded </span> Persons
                 </h1>
                 <h3>The Urban Refugees & Asylum Seekers Assistant</h3>
-                <button data-aos-duration="2000" data-aos="flip-left"> Donate today to make a difference! </button>
+                <a href="#donate" data-aos-duration="2000" data-aos="flip-left"> Donate today to make a difference! </a>
             </section>
         </div>
     </main>
@@ -124,7 +123,7 @@
     <!--Key features-->
 
 
-    <section class="features">
+    <section id="services" class="features">
 
         <div class="wrapper">
             <h1 data-aos="zoom-in" class="title">Key Focus Areas</h1>
@@ -132,19 +131,19 @@
                 or trigger any previously existing mental health condition among forcibly displaced persons.</p>
             <main class="cards">
                 <div data-aos="flip-left" class="card">
-                    <img loading="lazy" src="./img/edu.jpeg" alt="health">
+                    <img loading="lazy" src="./img/edu.jpg" alt="health">
                     <h3 class="title">Education</h3>
                     <p> Higher learning </p>
                     <button myId="2" id="btn_feature">Read more </button>
                 </div>
                 <div class="card">
-                    <img loading="lazy" src="./img/health.jpeg" alt="health">
+                    <img loading="lazy" src="./img/health.jpg" alt="health">
                     <h3 class="title">Healthcare</h3>
                     <p>Access to healthcare services</p>
                     <button myId="1" id="btn_feature">Read more </button>
                 </div>
                 <div data-aos="flip-left" class="card">
-                    <img loading="lazy" src="./img/job.jpeg" alt="health">
+                    <img loading="lazy" src="./img/job.jpg" alt="health">
                     <h3 class="title">Job Filtering</h3>
                     <p>Assisting with job hunt</p>
                     <button myId="0" id="btn_feature">Read more </button>
@@ -241,13 +240,14 @@
             <h1>Contact</h1>
             <ul data-aos-duration="2000" data-aos="zoom-in">
 
-                <li>  <a href="mailto:urasa.org@gmail.com"> <img loading="lazy" src="./icons/email.png" alt="email"></a> </li>
-                <li> <a target="_blank" href="https://twitter.com/OrgUrasa"><img loading="lazy" src="./icons/twitter.png"
-                            alt="twiter"></a> </li>
-                <li> <a target="_blank" href="https://www.linkedin.com/in/urasa-south-africa-782759295/"> <img loading="lazy"
-                            src="./icons/linke.png" alt="link"></a> </li>
-                <li> <a target="_blank" href="https://www.instagram.com/urasaorg/"><img loading="lazy" src="./icons/inst.jpg"
-                            alt="instagram"></a> </li>
+                <li> <a href="mailto:urasa.org@gmail.com"> <img loading="lazy" src="./icons/email.png" alt="email"></a>
+                </li>
+                <li> <a target="_blank" href="https://twitter.com/OrgUrasa"><img loading="lazy"
+                            src="./icons/twitter.png" alt="twiter"></a> </li>
+                <li> <a target="_blank" href="https://www.linkedin.com/in/urasa-south-africa-782759295/"> <img
+                            loading="lazy" src="./icons/linke.png" alt="link"></a> </li>
+                <li> <a target="_blank" href="https://www.instagram.com/urasaorg/"><img loading="lazy"
+                            src="./icons/inst.jpg" alt="instagram"></a> </li>
 
             </ul>
         </section>
@@ -275,9 +275,9 @@
         <main>
             <header>
                 <div> <img src="./img/urasa.png" /></div>
-                <div class="cancel"> 
-                    <img style="width: 40px;" src="./img/cancel.png"/>
-                 </div>
+                <div class="cancel">
+                    <img style="width: 40px;" src="./img/cancel.png" />
+                </div>
             </header>
             <p> BIO will be displayed here...</p>
         </main>
@@ -285,27 +285,27 @@
 
     <!--Donate-->
 
-    <section class="donate_wrapper">
+    <section id="donate" class="donate_wrapper">
 
-       <main class="donate">
-        <h2 class="active">Easy donate methods</h2>
+        <main class="donate">
+            <h2 class="active">Easy donate methods</h2>
 
-        <section class="donate_boxes">
-            <aside>
-            <img src="./img/bank.png" alt="banking" loading="lazy"/>
-            <h4 class="active">Reference</h4>
-            <p>Patty Nokumbana</p>
-            <h4 class="active">Account number</h4>
-            <h4>4853534752974532</h4>
-            </aside>
-            <aside>
-            <img src="./img/cash.png" alt="cash" loading="lazy"/>
-            <h4 class="active">eWallet</h4>
-            <p>073 734 2773</p>
-           
-        </aside>
-        </section>
-       </main>
+            <section class="donate_boxes">
+                <aside>
+                    <img src="./img/bank.png" alt="banking" loading="lazy" />
+                    <h4 class="active">Reference</h4>
+                    <p>Patty Nokumbana</p>
+                    <h4 class="active">Account number</h4>
+                    <h4>4853534752974532</h4>
+                </aside>
+                <aside>
+                    <img src="./img/cash.png" alt="cash" loading="lazy" />
+                    <h4 class="active">eWallet</h4>
+                    <p>073 734 2773</p>
+
+                </aside>
+            </section>
+        </main>
 
     </section>
 
@@ -316,12 +316,12 @@
     </footer>
 
     <script type="module" src="./javascript/App.js"></script>
-   
+
 
     <script>
-   
-   const btn_contact = document.querySelector('#contact_btn')
-    
+
+        const btn_contact = document.querySelector('#contact_btn')
+
         function goDown() {
 
             window.scrollTo({
@@ -332,9 +332,9 @@
         }
 
         btn_contact.addEventListener('click', goDown)
-       
+
     </script>
-   
+
 
 </body>
 
