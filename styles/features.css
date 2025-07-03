@@ -132,7 +132,7 @@ section.features .cards .card button:hover {
   }
 }
 
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
   section.features .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -147,4 +147,4 @@ section.features .cards .card button:hover {
   section.features .cards .card {
     width: 200px;
   }
-} */
+}
